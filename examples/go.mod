@@ -10,6 +10,7 @@ require (
 	github.com/gocql/gocql v1.7.0
 	github.com/lib/pq v1.10.9
 	github.com/minio/minio-go/v7 v7.0.98
+	github.com/moby/moby/api v1.56.1
 	github.com/moby/moby/client v0.6.2
 	github.com/ory/dockertest/v4 v4.0.0
 	github.com/redis/go-redis/v9 v9.7.3
@@ -40,7 +41,6 @@ require (
 	github.com/minio/crc64nvme v1.1.1 // indirect
 	github.com/minio/md5-simd v1.1.2 // indirect
 	github.com/moby/docker-image-spec v1.3.1 // indirect
-	github.com/moby/moby/api v1.56.1 // indirect
 	github.com/montanaflynn/stats v0.7.1 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.1.1 // indirect
