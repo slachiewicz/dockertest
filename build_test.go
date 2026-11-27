@@ -363,8 +363,6 @@ CMD ["sleep", "300"]
 	)
 }
 
-// cleanupBuildImages runs after the subsequently registered pool cleanup.
-// Keep both the test tag and IDs because another build can replace the tag.
 // cleanupLabeledImages removes, when the test ends, the untagged images that
 // carry label, with their untagged parents.
 func cleanupLabeledImages(t *testing.T, label string) {
@@ -396,6 +394,8 @@ func cleanupLabeledImages(t *testing.T, label string) {
 	})
 }
 
+// cleanupBuildImages runs after the subsequently registered pool cleanup.
+// Keep both the test tag and IDs because another build can replace the tag.
 func cleanupBuildImages(t *testing.T, tag string) func(string) {
 	t.Helper()
 	var ids []string
